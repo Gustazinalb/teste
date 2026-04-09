@@ -1,0 +1,127 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+    width: 93.5%;
+    background: linear-gradient(90deg, #000, #020617);
+    padding: 30px 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("fundo.png");
+    background-size: cover;
+    /* cobre toda a tela */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+    color: #38bdf8;
+    letter-spacing: 2px;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    gap: 60px;
+    margin-right: 33.3;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9ca3af;
+    font-weight: 600;
+    font-size: 24px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* linha animada */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #38bdf8;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* gameplay destacado */
+nav a {
+    color: #facc15;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* AREA PERFIL */
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* CARD */
+.perfil-card {
+    width: 550px;
+    height: 350px;
+    padding: 30px;
+
+    text-align: center;
+
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+}
+
+/* IMAGEM */
+.perfil-card img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+    border: 3px solid #facc15;
+}
+
+/* NOME */
+.perfil-card h2 {
+    color: #facc15;
+    margin: 10px;
+    font-size: 42px;
+}
+
+/* TEXTO */
+.perfil-card p {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* BOTÃO */
+.button {
+    margin-top: 10px;
+}

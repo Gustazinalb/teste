@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+    width: 93.5%;
+    background: linear-gradient(90deg, #000, #020617);
+    padding: 30px 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+    color: #38bdf8;
+    letter-spacing: 2px;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    gap: 60px;
+    margin-right:33.3 ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9ca3af;
+    font-weight: 600;
+    font-size: 24px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* linha animada */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #38bdf8;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* gameplay destacado */
+nav a {
+    color: #facc15;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* AREA DO JOGO */
+.game-area {
+    display: flex;
+    gap: 50px;
+    padding: 140px 60px;
+    align-items: flex-start;
+}
+
+/* IMAGEM */
+.game-cover img {
+    width: 100%;
+    max-width: 780px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.7);
+    margin-top: 30px;
+}
+
+/* INFO */
+.game-info {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.game-info h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #facc15;
+}
+
+.game-info li {
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.game-info p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+/* 🔥 BOTÃO AGORA CORRETO (ABAIXO DAS INFOS) */
+.buy-area {  
+    margin: auto;
+}
+
+/* BOTÃO */
+.button {
+    padding: 24px 80px;
+    font-size: 26px;
+    font-weight: bold;
+
+    background: linear-gradient(45deg, #facc15, #f97316);
+    color: black;
+
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+
+    box-shadow: 0 0 30px rgba(250, 204, 21, 0.8);
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(249, 115, 22, 1);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(90deg, #020617, #0f172a);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+footer h3 {
+    color: #38bdf8;
+    font-size: 26px;
+}
+
+footer p {
+    font-size: 24px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+footer p:hover {
+    color: #facc15;
+    transform: scale(1.05);
+}
